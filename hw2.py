@@ -7,8 +7,11 @@ ss = []
 for i in data["matrix"]:
     ss.append(i["number"])
 IHV = ss.index(max(ss))
+print(IHV)
 
 result = {"id": data["matrix"][IHV]["id"], "number": data["matrix"][IHV]["number"],
           "committer_name": data["committer_name"], "committer_email": data["committer_email"], }
 
 json.dump(result, open(path_to_result, "w"))
+
+#coment for jira
