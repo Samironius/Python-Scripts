@@ -5,7 +5,7 @@ host, port, user = sys.argv[1], int(sys.argv[2]), sys.argv[3]
 path = os.path.join(sys.argv[4], sys.argv[5])
 count = int(sys.argv[6])
 mode = "0" + str(sys.argv[7])
-key = paramiko.RSAKey.from_private_key_file("/mnt/c/Users/Samir/Desktop/TestCentOS_key.pem")
+key = paramiko.RSAKey.from_private_key_file(sys.argv[8])
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
