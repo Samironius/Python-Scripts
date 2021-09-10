@@ -1,6 +1,7 @@
 #!/bin/bash
 testVariable=$1
 
+# for test
 if [[ $testVariable == "hw2.py" ]]; then
   python3 $testVariable data_json.json result.json
   ls
